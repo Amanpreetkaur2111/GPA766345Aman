@@ -12,6 +12,8 @@
 		9B9CF982237E332300970EFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9CF980237E332300970EFB /* Main.storyboard */; };
 		9B9CF984237E332400970EFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B9CF983237E332400970EFB /* Assets.xcassets */; };
 		9B9CF987237E332400970EFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B9CF985237E332400970EFB /* LaunchScreen.storyboard */; };
+		9B9CF98F237E33CE00970EFB /* students.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9CF98E237E33CE00970EFB /* students.swift */; };
+		9B9CF991237E35BF00970EFB /* studentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9CF990237E35BF00970EFB /* studentTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		9B9CF983237E332400970EFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B9CF986237E332400970EFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B9CF988237E332400970EFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B9CF98E237E33CE00970EFB /* students.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = students.swift; sourceTree = "<group>"; };
+		9B9CF990237E35BF00970EFB /* studentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				9B9CF983237E332400970EFB /* Assets.xcassets */,
 				9B9CF985237E332400970EFB /* LaunchScreen.storyboard */,
 				9B9CF988237E332400970EFB /* Info.plist */,
+				9B9CF98E237E33CE00970EFB /* students.swift */,
+				9B9CF990237E35BF00970EFB /* studentTableViewController.swift */,
 			);
 			path = GPA766345;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			files = (
 				9B9CF97F237E332300970EFB /* ViewController.swift in Sources */,
 				9B9CF97D237E332300970EFB /* AppDelegate.swift in Sources */,
+				9B9CF991237E35BF00970EFB /* studentTableViewController.swift in Sources */,
+				9B9CF98F237E33CE00970EFB /* students.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
