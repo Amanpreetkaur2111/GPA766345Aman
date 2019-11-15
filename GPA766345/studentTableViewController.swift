@@ -11,8 +11,11 @@ import UIKit
 class studentTableViewController: UITableViewController, UISearchResultsUpdating {
     
     
+    
+    
+    @IBOutlet var SearchBar: UISearchBar!
     let searchContoller  = UISearchController(searchResultsController: nil)
-    var remainingNames = [students.StudentsSave]
+    var filterStud = [students]()
 
 
     override func viewDidLoad() {
@@ -59,13 +62,15 @@ class studentTableViewController: UITableViewController, UISearchResultsUpdating
     return UITableViewCell()
     
 }
+    
+    
 
     func updateSearchResults(for searchController: UISearchController) {
-        
+        SearchedStud(for: searchController.searchBar.text ?? "")
     }
-    func remainingNamesofStudents ( for searchText : String){
-        
-    }
+    
+    
+    
     
     
     
@@ -120,5 +125,13 @@ class studentTableViewController: UITableViewController, UISearchResultsUpdating
         }
     }
     
+    func SearchedStud(for searchtext : String){
+        
+        filterStud = students.StudentsSave.filter({ (students) -> Bool in
+            students.firstName.lowercased().contains(searchtext.lowercased())
+        })
+        
+        tableView.reloadData()
+    }
 
 }
